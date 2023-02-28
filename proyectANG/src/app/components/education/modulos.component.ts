@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+
 @Component({
-  selector: 'app-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css']
+  selector: 'app-modulos',
+  templateUrl: './modulos.component.html',
+  styleUrls: ['./modulos.component.css']
 })
-export class WorkComponent implements OnInit{
+export class ModulosComponent implements OnInit{
 
   miPortFolio:any;
-  constructor(private datosPortFolio: PortfolioService) {}
+  constructor(private datosPortFolio: PortfolioService){}
 
   ngOnInit(): void {
-    this.datosPortFolio.obtenerDatos().subscribe(data=>{
+    this.datosPortFolio.obtenerDatos().subscribe(data =>{
       console.log(data);
       this.miPortFolio=data;
     });

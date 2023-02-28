@@ -3,36 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about.component';
-import { ComponentsComponent } from './components/components.component';
-import { ButtonComponent } from './components/button/button.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { EducationComponent } from './components/education/education.component';
+import { ModulosComponent } from './components/education/modulos.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
-import { InfobasicaComponent } from './encabezado/infobasica/infobasica.component';
-import { LanguagesComponent } from './components/encabezado/languages/languages.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { InfobasicaComponent } from './components/encabezado/infobasica/infobasica.component';
 import { SkillsComponent } from './components/encabezado/skills/skills.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-
+import { LanguagesComponent } from './components/encabezado/languages/languages.component';
+import {HttpClientModule } from '@angular/common/http';
+import { ButtonComponent } from './components/button/button.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ComponentsComponent,
-    ButtonComponent,
-    ContactComponent,
-    EducationComponent,
+    ModulosComponent,
     EncabezadoComponent,
     WorkComponent,
+    AboutComponent,
+    ContactComponent,
     InfobasicaComponent,
-    LanguagesComponent,
     SkillsComponent,
-    ServiciosComponent
+    LanguagesComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
