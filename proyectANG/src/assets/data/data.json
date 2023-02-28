@@ -32,22 +32,24 @@
         "career": "Information Systems Engineering"
     }],
     
-    "work":{
+    "work":[{
         "working": "Front End Developer / tesla.com",
         "start": "Jan 2024 -",
         "finish": "Current",
-        "description": "Pertenezco a un grupo de trabajo increible, el cliente esta muy contento.",
-        
-        "workingd": "Web Developer / secret.com",
-        "startd": "Mar 2020 -",
-        "finishd": "Dec 2023",
-        "descriptiond": "Se realizo la creación y el mantenimiento de una web cuyo nombre el cliente quiere mantenerlo oculto",
-        
-        "workingt": "Graphic Designer / designpoop.com",
-        "startt": "Jun 2019 -",
-        "finisht": "Dec 2023",
-        "descriptiont": "Participe del proyecto del diseño de la web tan emblematica Desing Poop"
+        "description": "Pertenezco a un grupo de trabajo increible, el cliente esta muy contento."
     },
+    {
+        "working": "Web Developer / secret.com",
+        "start": "Mar 2020 -",
+        "finish": "Dec 2023",
+        "description": "Se realizo la creación y el mantenimiento de una web cuyo nombre el cliente quiere mantenerlo oculto"
+    },
+    {   
+        "working": "Graphic Designer / designpoop.com",
+        "start": "Jun 2019 -",
+        "finish": "Dec 2023",
+        "description": "Participe del proyecto del diseño de la web tan emblematica Desing Poop"
+    }],
     
     "aboutMe":{
         "descripAbout":"A simple guy who was born in a town, loves animals, playing sports and spending time with family."

@@ -1,24 +1,23 @@
 
 
+
 <div class="w3-container w3-card w3-white w3-margin-bottom">
     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience / Proyects</h2>
     
-    <div class="w3-container">
-      <h5 class="w3-opacity"><b>{{miPortFolio.work.working}}</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{miPortFolio.work.start}}<span class="w3-tag w3-teal w3-round">{{miPortFolio.work.finish}}</span></h6>
-      <p>{{miPortFolio.work.description}}</p>
+    <tr *ngFor="let work of miPortFolio.work">
+
       <hr>
-    </div>
+
     <div class="w3-container">
-      <h5 class="w3-opacity"><b>{{miPortFolio.work.workingd}}</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{miPortFolio.work.startd}}{{miPortFolio.work.finishd}}</h6>
-      <p>{{miPortFolio.work.descriptiond}}</p>
-      <hr>
+      <h5 class="w3-opacity"><b>{{work.working}}</b></h5>
+
+      <button class="btn"><i class="fa fa-trash"></i></button>
+
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{work.start}}<span class="w3-tag w3-teal w3-round">{{work.finish}}</span></h6>
+      <p>{{work.description}}</p>
+      
     </div>
-    <div class="w3-container">
-      <h5 class="w3-opacity"><b>{{miPortFolio.work.workingt}}</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{miPortFolio.work.startt}}{{miPortFolio.work.finisht}}</h6>
-      <p>{{miPortFolio.work.descriptiont}}</p><br>
-    </div>
+  </tr>
+    
     
   </div>  
