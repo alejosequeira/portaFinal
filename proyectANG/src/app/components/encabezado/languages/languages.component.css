@@ -1,0 +1,12 @@
+.b {
+    background-color: rgb(255, 255, 255); /* Blue background */
+    border: black; /* Remove borders */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 1.5px 2px; /* Some padding */
+    font-size: 0px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  /* Darker background on mouse-over */
+  .b:hover {
+    background-color: rgb(95, 95, 95);
+  }
