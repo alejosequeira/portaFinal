@@ -8,12 +8,21 @@
         "telefono": "+549-3454090694"
     },
     
-    "skill":{
-        "js": "JavaScript",
-        "css": "CSS",
-        "html": "HTML",
-        "ang": "Angular"
+    "skill":[{
+        "js": "JavaScript"
     },
+    {
+        "js": "CSS"
+    },
+    {
+        "js": "HTML"
+        
+    },
+    {
+        "js": "Angular"
+        
+    }],
+
     "languages":{
         "es": "Español",
         "en": "English",

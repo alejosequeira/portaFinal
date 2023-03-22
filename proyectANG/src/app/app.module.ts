@@ -13,6 +13,7 @@ import { SkillsComponent } from './components/encabezado/skills/skills.component
 import { LanguagesComponent } from './components/encabezado/languages/languages.component';
 import {HttpClientModule } from '@angular/common/http';
 import { ButtonComponent } from './components/button/button.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { ButtonComponent } from './components/button/button.component';
     InfobasicaComponent,
     SkillsComponent,
     LanguagesComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProyectsComponent
   ],
   imports: [
     BrowserModule,

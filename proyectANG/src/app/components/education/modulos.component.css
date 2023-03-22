@@ -1,21 +1,21 @@
 /* Style buttons */
 .btn {
   float: right;
-    background-color: rgb(255, 30, 30); /* Blue background */
+    background-color: rgba(255, 255, 255, 0.993); /* Blue background */
     border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 3px 7px; /* Some padding */
-    font-size: 16px; /* Set a font size */
+    color: rgb(255, 0, 0); /* White text */
+    padding: 0px 7px; /* Some padding */
+    font-size: 19px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
   }
 
   .bt {
     float: right;
-    background-color: rgb(0, 119, 255); /* Blue background */
+    background-color: rgb(255, 255, 255); /* Blue background */
     border: none; /* Remove borders */
     color: rgb(0, 0, 0); /* White text */
-    padding: 3px 4px; /* Some padding */
-    font-size: 20px; /* Set a font size */
+    padding: 4px 4px; /* Some padding */
+    font-size: 19px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
   }
   
