@@ -1,0 +1,82 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3 class="text-center">Edición de educación</h3>    
+    <form (ngSubmit)="onSubmit()" #educationForm="ngForm">
+
+        <div class="form-group">
+            <label>titulo : </label>
+            <input type="text" class="form-control" id="titulo" [(ngModel)]="education.titulo" name="titulo" required
+                minlength="4" maxlength="20" placeholder="Digite un titulo " #titulo="ngModel">
+            <div class="alert alert-danger" *ngIf="titulo.invalid && (titulo.dirty || titulo.touched)">
+                <div *ngIf="titulo.errors.required">
+                    Digite un titulo por favor
+                </div>
+                <div *ngIf="titulo.errors.minlength">
+                    El titulo tiene que contener como minimo 4 caracteres
+                </div>
+                <div *ngIf="titulo.errors.maxlength">
+                    El titulo tiene que tener como maximo 20 caracteres
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Fecha de inicio : </label>
+            <input type="text" class="form-control" id="inicio" [(ngModel)]="education.inicio" name="inicio"
+                required minlength="1" maxlength="20" placeholder="Digite el inicio " #inicio="ngModel">
+            <div class="alert alert-danger" *ngIf="inicio.invalid && (inicio.dirty || inicio.touched)">
+                <div *ngIf="inicio.errors.required">
+                    Digite el inicio por favor
+                </div>
+                <div *ngIf="inicio.errors.minlength">
+                    El inicio tiene que contener como minimo algun caracter
+                </div>
+                <div *ngIf="inicio.errors.maxlength">
+                    El inicio tiene que tener como maximo 20 caracteres
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label>Fecha de finalización : </label>
+            <input type="text" class="form-control" id="fin" [(ngModel)]="education.fin" name="fin"
+                required minlength="1" maxlength="20" placeholder="Digite el fin " #fin="ngModel">
+            <div class="alert alert-danger" *ngIf="fin.invalid && (fin.dirty || fin.touched)">
+                <div *ngIf="fin.errors.required">
+                    Digite el fin por favor
+                </div>
+                <div *ngIf="fin.errors.minlength">
+                    El fin tiene que contener como minimo algun caracter
+                </div>
+                <div *ngIf="fin.errors.maxlength">
+                    El fin tiene que tener como maximo 20 caracteres
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label>Incluya una breve descripción </label>
+            <input type="text" class="form-control" id="descripcion" [(ngModel)]="education.descripcion" name="descripcion"
+                required minlength="10" maxlength="140" placeholder="Digite la descripcion " #descripcion="ngModel">
+            <div class="alert alert-danger" *ngIf="descripcion.invalid && (descripcion.dirty || descripcion.touched)">
+                <div *ngIf="descripcion.errors.required">
+                    Digite la descripcion por favor
+                </div>
+                <div *ngIf="descripcion.errors.minlength">
+                    La descripcion tiene que contener como minimo algun caracter
+                </div>
+                <div *ngIf="descripcion.errors.maxlength">
+                    La descripcion tiene que tener como maximo 20 caracteres
+                </div>
+            </div>
+        </div>
+
+        
+
+        <button class="btn btn-success" [disabled]="!educationForm.form.valid">Guardar</button>
+    </form>
+</div>

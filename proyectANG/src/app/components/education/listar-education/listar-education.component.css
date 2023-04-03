@@ -1,0 +1,45 @@
+/* Style buttons */
+.btn {
+    float: right;
+      background-color: rgba(255, 255, 255, 0.993); /* Blue background */
+      border: none; /* Remove borders */
+      color: rgb(255, 0, 0); /* White text */
+      padding: 0px 7px; /* Some padding */
+      font-size: 19px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+  
+    .bt {
+      float: right;
+      background-color: rgb(255, 255, 255); /* Blue background */
+      border: none; /* Remove borders */
+      color: rgb(0, 0, 0); /* White text */
+      padding: 4px 4px; /* Some padding */
+      font-size: 19px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+    
+    .b {
+      background-color: rgb(255, 255, 255); /* Blue background */
+      border: black; /* Remove borders */
+      color: rgb(0, 0, 0); /* White text */
+      padding: 1.5px 2px; /* Some padding */
+      font-size: 0px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+  
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: rgb(225, 65, 65);
+    }
+  
+    /* Darker background on mouse-over */
+    .bt:hover {
+      background-color: RoyalBlue;
+    }
+  
+    /* Darker background on mouse-over */
+    .b:hover {
+      background-color: rgb(95, 95, 95);
+    }
+  

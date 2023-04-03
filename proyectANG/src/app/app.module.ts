@@ -28,6 +28,9 @@ import { RegistrarEmpleadosComponent } from './components/empleados/registrar-em
 import { ActualizarEmpleadosComponent } from './components/empleados/actualizar-empleados/actualizar-empleados.component';
 import { ListarEmpleadosComponent } from './components/empleados/listar-empleados/listar-empleados.component';
 import { DetallesEmpleadosComponent } from './components/empleados/detalles-empleados/detalles-empleados.component';
+import { ListarEducationComponent } from './components/education/listar-education/listar-education.component';
+import { ActualizarEducationComponent } from './components/education/actualizar-education/actualizar-education.component';
+import { RegistrarEducationComponent } from './components/education/registrar-education/registrar-education.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,9 @@ import { DetallesEmpleadosComponent } from './components/empleados/detalles-empl
     ActualizarEmpleadosComponent,
     ListarEmpleadosComponent,
     DetallesEmpleadosComponent,
+    ListarEducationComponent,
+    ActualizarEducationComponent,
+    RegistrarEducationComponent,
   ],
   imports: [
     BrowserModule,
