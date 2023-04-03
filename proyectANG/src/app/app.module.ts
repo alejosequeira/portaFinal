@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, NgForm } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,9 +13,22 @@ import { ContactComponent } from './components/contact/contact.component';
 import { InfobasicaComponent } from './components/encabezado/infobasica/infobasica.component';
 import { SkillsComponent } from './components/encabezado/skills/skills.component';
 import { LanguagesComponent } from './components/encabezado/languages/languages.component';
-import {HttpClientModule } from '@angular/common/http';
-import { ButtonComponent } from './components/button/button.component';
+import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProyectsComponent } from './components/proyects/proyects.component';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
+
+import { EnvironmentProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PortfolioService } from './servicios/portfolio.service';
+import { InterceptorService } from './servicios/interceptor.service';
+import { RegistrarEmpleadosComponent } from './components/empleados/registrar-empleados/registrar-empleados.component';
+import { ActualizarEmpleadosComponent } from './components/empleados/actualizar-empleados/actualizar-empleados.component';
+import { ListarEmpleadosComponent } from './components/empleados/listar-empleados/listar-empleados.component';
+import { DetallesEmpleadosComponent } from './components/empleados/detalles-empleados/detalles-empleados.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,15 +40,26 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
     InfobasicaComponent,
     SkillsComponent,
     LanguagesComponent,
-    ButtonComponent,
-    ProyectsComponent
+    ProyectsComponent,
+    IniciarSesionComponent,
+    PortfolioComponent,
+    RegistrarEmpleadosComponent,
+    ActualizarEmpleadosComponent,
+    ListarEmpleadosComponent,
+    DetallesEmpleadosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule,
+    RouterModule,
   ],
-  providers: [],
+  providers: [PortfolioService,
+    { provide: HTTP_INTERCEPTORS, useClass:InterceptorService, multi:true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -62,7 +62,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
+              "production": {
               "browserTarget": "proyectANG:build:production"
             },
             "development": {
@@ -74,7 +74,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "proyectANG:build"
+            "browserTarget": "proyectANG:build",
+            "proxyConfig": "proxy.conf.json"
           }
         },
         "test": {

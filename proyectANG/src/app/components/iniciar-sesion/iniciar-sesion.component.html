@@ -1,0 +1,39 @@
+<h1>INICIAR SESION</h1>
+<form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="mail" formControlName='mail'
+      [ngClass]="{'is-invalid':Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+      class="form-control" 
+      id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+      <div *ngIf="Email?.errors && Email?.touched">
+        
+        <p *ngIf="Email?.hasError('required')" class="text-danger">
+          el email es required.
+        </p>
+        <p *ngIf="Email?.hasError('mail')" class="text-danger">
+          el formato del email debe ser valido.
+        </p>
+      </div>
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" formControlName="password" 
+      [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+      class="form-control" 
+      id="exampleInputPassword1">
+
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text-danger">
+          la contra es requerida
+        </p>
+        <p *ngIf="Password?.errors?.['minlenght']" class="text-danger">
+          la contra debe ser de mas de 8
+        </p>
+      </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary">ENVIAR</button>
+  </form>
