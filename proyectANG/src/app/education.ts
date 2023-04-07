@@ -2,9 +2,9 @@ export class Education {
 
 
     id:number;
-    titulo:string;
-    inicio:string;
-    fin: string;
-    descripcion:string;
+    titulot:string;
+    iniciot:string;
+    fint: string;
+    descriptiont:string;
   }
   

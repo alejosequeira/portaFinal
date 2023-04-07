@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./listar-education.component.css']
 })
 export class ListarEducationComponent implements OnInit{
-  education: Education[];
+  educations: Education[];
 
   
   constructor(private educationServicio:EducationService,private router:Router) { }
@@ -22,12 +22,15 @@ export class ListarEducationComponent implements OnInit{
   }
 
   actualizarEducation(id:number){
-    this.router.navigate(['actualizar-education',id]);
+    this.router.navigate(['app-actualizar-education',id]);
+  }
+  registrarEducation(id:number){
+    this.router.navigate(['app-registrar-education',id]);
   }
 
   private obtenerEducation(){
     this.educationServicio.obtenerListaDeEducation().subscribe(dato => {
-      this.education = dato;
+      this.educations = dato;
     });
   }
 
@@ -39,7 +42,7 @@ export class ListarEducationComponent implements OnInit{
         }
       
   verDetallesDelEducation(id:number){
-    this.router.navigate(['education-detalles',id]);
+    this.router.navigate(['portfolio',id]);
   }
 
 

@@ -6,27 +6,31 @@
   
     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal">
       
-    </i>EDUCATION <button class="b"><i class="material-icons">library_add</i></button></h2>
+    </i>EDUCATION 
+    
+  </h2>
+    
+  
     
     
-    <tr *ngFor="let education of miPortFolio.education">
+    <tr *ngFor="let education of educations">
       
-      
+      <button (click)= "registrarEducation(education.id)" class="bt"><i class="fa fa-edit"></i></button>
 
       <hr>
     
       <div class="w3-container">
-      <h5 class="w3-opacity"><b>{{education.school}}</b></h5>
+      <h5 class="w3-opacity"><b>{{education.titulot}}</b></h5>
       
       
 
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{education.start}}
-        <span class="w3-tag w3-teal w3-round">{{education.finish}}</span>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{education.iniciot}}
+        <span class="w3-tag w3-teal w3-round">{{education.fint}}</span>
         
         <button (click)= "actualizarEducation(education.id)" class="bt"><i class="fa fa-edit"></i></button>
         <button (click)= "eliminarEducation(education.id)" class="btn"><i class="fa fa-trash"></i></button></h6>
       
-      <p>{{education.career}}</p>
+      <p>{{education.descriptiont}}</p>
       
     </div>
     

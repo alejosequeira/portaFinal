@@ -5,7 +5,6 @@ import { NgModel } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ModulosComponent } from './components/education/modulos.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
@@ -35,7 +34,6 @@ import { RegistrarEducationComponent } from './components/education/registrar-ed
 @NgModule({
   declarations: [
     AppComponent,
-    ModulosComponent,
     EncabezadoComponent,
     WorkComponent,
     AboutComponent,

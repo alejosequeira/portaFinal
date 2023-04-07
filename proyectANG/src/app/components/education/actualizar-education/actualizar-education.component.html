@@ -5,16 +5,16 @@
 
         <div class="form-group">
             <label>titulo : </label>
-            <input type="text" class="form-control" id="titulo" [(ngModel)]="education.titulo" name="titulo" required
-                minlength="4" maxlength="20" placeholder="Digite un titulo " #titulo="ngModel">
-            <div class="alert alert-danger" *ngIf="titulo.invalid && (titulo.dirty || titulo.touched)">
-                <div *ngIf="titulo.errors.required">
+            <input type="text" class="form-control" id="titulot" [(ngModel)]="education.titulot" name="titulot" required
+                minlength="4" maxlength="20" placeholder="Digite un titulo " #titulot="ngModel">
+            <div class="alert alert-danger" *ngIf="titulot.invalid && (titulot.dirty || titulot.touched)">
+                <div *ngIf="titulot.errors.required">
                     Digite un titulo por favor
                 </div>
-                <div *ngIf="titulo.errors.minlength">
+                <div *ngIf="titulot.errors.minlength">
                     El titulo tiene que contener como minimo 4 caracteres
                 </div>
-                <div *ngIf="titulo.errors.maxlength">
+                <div *ngIf="titulot.errors.maxlength">
                     El titulo tiene que tener como maximo 20 caracteres
                 </div>
             </div>
@@ -22,16 +22,16 @@
 
         <div class="form-group">
             <label>Fecha de inicio : </label>
-            <input type="text" class="form-control" id="inicio" [(ngModel)]="education.inicio" name="inicio"
-                required minlength="1" maxlength="20" placeholder="Digite el inicio " #inicio="ngModel">
-            <div class="alert alert-danger" *ngIf="inicio.invalid && (inicio.dirty || inicio.touched)">
-                <div *ngIf="inicio.errors.required">
+            <input type="text" class="form-control" id="iniciot" [(ngModel)]="education.iniciot" name="iniciot"
+                required minlength="1" maxlength="20" placeholder="Digite el inicio " #iniciot="ngModel">
+            <div class="alert alert-danger" *ngIf="iniciot.invalid && (iniciot.dirty || iniciot.touched)">
+                <div *ngIf="iniciot.errors.required">
                     Digite el inicio por favor
                 </div>
-                <div *ngIf="inicio.errors.minlength">
+                <div *ngIf="iniciot.errors.minlength">
                     El inicio tiene que contener como minimo algun caracter
                 </div>
-                <div *ngIf="inicio.errors.maxlength">
+                <div *ngIf="iniciot.errors.maxlength">
                     El inicio tiene que tener como maximo 20 caracteres
                 </div>
             </div>
@@ -41,16 +41,16 @@
         
         <div class="form-group">
             <label>Fecha de finalización : </label>
-            <input type="text" class="form-control" id="fin" [(ngModel)]="education.fin" name="fin"
-                required minlength="1" maxlength="20" placeholder="Digite el fin " #fin="ngModel">
-            <div class="alert alert-danger" *ngIf="fin.invalid && (fin.dirty || fin.touched)">
-                <div *ngIf="fin.errors.required">
+            <input type="text" class="form-control" id="fint" [(ngModel)]="education.fint" name="fint"
+                required minlength="1" maxlength="20" placeholder="Digite el fin " #fint="ngModel">
+            <div class="alert alert-danger" *ngIf="fint.invalid && (fint.dirty || fint.touched)">
+                <div *ngIf="fint.errors.required">
                     Digite el fin por favor
                 </div>
-                <div *ngIf="fin.errors.minlength">
+                <div *ngIf="fint.errors.minlength">
                     El fin tiene que contener como minimo algun caracter
                 </div>
-                <div *ngIf="fin.errors.maxlength">
+                <div *ngIf="fint.errors.maxlength">
                     El fin tiene que tener como maximo 20 caracteres
                 </div>
             </div>
@@ -60,16 +60,16 @@
         
         <div class="form-group">
             <label>Incluya una breve descripción </label>
-            <input type="text" class="form-control" id="descripcion" [(ngModel)]="education.descripcion" name="descripcion"
-                required minlength="10" maxlength="140" placeholder="Digite la descripcion " #descripcion="ngModel">
-            <div class="alert alert-danger" *ngIf="descripcion.invalid && (descripcion.dirty || descripcion.touched)">
-                <div *ngIf="descripcion.errors.required">
+            <input type="text" class="form-control" id="descriptiont" [(ngModel)]="education.descriptiont" name="descriptiont"
+                required minlength="10" maxlength="140" placeholder="Digite la descriptiont " #descriptiont="ngModel">
+            <div class="alert alert-danger" *ngIf="descriptiont.invalid && (descriptiont.dirty || descriptiont.touched)">
+                <div *ngIf="descriptiont.errors.required">
                     Digite la descripcion por favor
                 </div>
-                <div *ngIf="descripcion.errors.minlength">
+                <div *ngIf="descriptiont.errors.minlength">
                     La descripcion tiene que contener como minimo algun caracter
                 </div>
-                <div *ngIf="descripcion.errors.maxlength">
+                <div *ngIf="descriptiont.errors.maxlength">
                     La descripcion tiene que tener como maximo 20 caracteres
                 </div>
             </div>

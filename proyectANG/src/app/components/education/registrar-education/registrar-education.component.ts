@@ -24,7 +24,7 @@ export class RegistrarEducationComponent implements OnInit{
   }
 
   irALaListaDeEducation(){
-    this.router.navigate(['/education']);
+    this.router.navigate(['app-registrar-education']);
     
   }
 
