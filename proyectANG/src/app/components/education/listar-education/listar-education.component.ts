@@ -20,12 +20,15 @@ export class ListarEducationComponent implements OnInit{
   ngOnInit(): void {
     this.obtenerEducation();
   }
+  ngOnChanges(): void {
+    this.obtenerEducation();
+  }
 
   actualizarEducation(id:number){
-    this.router.navigate(['app-actualizar-education',id]);
+    this.router.navigate(['actualizar-education',id]);
   }
-  registrarEducation(id:number){
-    this.router.navigate(['app-registrar-education',id]);
+  registrarEducation(){
+    this.router.navigate(['registrar-education']);
   }
 
   private obtenerEducation(){

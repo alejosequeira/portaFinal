@@ -6,6 +6,8 @@ import { ListarEmpleadosComponent } from './components/empleados/listar-empleado
 import { RegistrarEmpleadosComponent } from './components/empleados/registrar-empleados/registrar-empleados.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { RegistrarEducationComponent } from './components/education/registrar-education/registrar-education.component';
+import { ListarEducationComponent } from './components/education/listar-education/listar-education.component';
 
 const routes: Routes = [
   //aca seria {path}:'portfolio-button',component:PortfolioButtonComponent};
@@ -16,7 +18,10 @@ const routes: Routes = [
   {path : 'empleados',component:ListarEmpleadosComponent},
   {path : 'registrar-empleado',component : RegistrarEmpleadosComponent},
   {path : 'actualizar-empleado/:id',component : ActualizarEmpleadosComponent},
-  {path : 'empleado-detalles/:id',component : DetallesEmpleadosComponent}
+  {path : 'empleado-detalles/:id',component : DetallesEmpleadosComponent},
+
+  {path : 'registrar-education', component : RegistrarEducationComponent},
+  {path : 'listar-education', component: ListarEducationComponent}
 ];
 
 @NgModule({
