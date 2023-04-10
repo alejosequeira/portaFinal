@@ -21,7 +21,7 @@ export class ActualizarEducationComponent implements OnInit {
   }
 
   irAlaListaDeEducation(){
-    this.router.navigate(['/education']);
+    this.router.navigate(['/listar-education']);
   }
 
   onSubmit(){

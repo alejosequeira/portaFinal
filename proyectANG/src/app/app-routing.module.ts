@@ -8,12 +8,13 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { RegistrarEducationComponent } from './components/education/registrar-education/registrar-education.component';
 import { ListarEducationComponent } from './components/education/listar-education/listar-education.component';
+import { ActualizarEducationComponent } from './components/education/actualizar-education/actualizar-education.component';
 
 const routes: Routes = [
   //aca seria {path}:'portfolio-button',component:PortfolioButtonComponent};
   {path:'portfolio',component:PortfolioComponent},
   {path:'iniciar-sesion',component:IniciarSesionComponent},
-  {path:'', redirectTo:'empleados', pathMatch:'full'},
+  {path:'', redirectTo:'portfolio', pathMatch:'full'},
 
   {path : 'empleados',component:ListarEmpleadosComponent},
   {path : 'registrar-empleado',component : RegistrarEmpleadosComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path : 'empleado-detalles/:id',component : DetallesEmpleadosComponent},
 
   {path : 'registrar-education', component : RegistrarEducationComponent},
-  {path : 'listar-education', component: ListarEducationComponent}
+  {path : 'listar-education', component: ListarEducationComponent},
+  {path : 'actualizar-education/:id', component: ActualizarEducationComponent}
 ];
 
 @NgModule({

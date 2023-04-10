@@ -26,6 +26,8 @@ export class ListarEducationComponent implements OnInit{
 
   actualizarEducation(id:number){
     this.router.navigate(['actualizar-education',id]);
+    console.log("ejecu act");
+            this.obtenerEducation();
   }
   registrarEducation(){
     this.router.navigate(['registrar-education']);
