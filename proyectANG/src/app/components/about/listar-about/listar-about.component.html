@@ -1,0 +1,22 @@
+<div class="w3-container w3-card w3-white">
+    <h2 class="w3-text-grey w3-padding-16">
+      <i class="fa fa-id-card fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ABOUT ME
+
+      <button (click)= "registrarAboutMe()"  class="b"><i class="material-icons">library_add</i></button></h2>
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>¿Who I am?</b>
+
+
+      </h5>
+      <tr *ngFor="let aboutme of abo">
+      <p>{{aboutme.descripcion}}
+
+        <button (click)= "actualizarAboutMe(aboutme.id)" class="bt"><i class="fa fa-edit"></i></button>
+        <button (click)= "eliminarAboutMe(aboutme.id)" class="btn"><i class="fa fa-trash"></i></button>
+      </p>
+
+      
+
+    </tr>
+    </div>
+  </div>

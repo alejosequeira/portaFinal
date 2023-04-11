@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
-import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { InfobasicaComponent } from './components/encabezado/infobasica/infobasica.component';
 import { SkillsComponent } from './components/encabezado/skills/skills.component';
@@ -30,13 +29,15 @@ import { DetallesEmpleadosComponent } from './components/empleados/detalles-empl
 import { ListarEducationComponent } from './components/education/listar-education/listar-education.component';
 import { ActualizarEducationComponent } from './components/education/actualizar-education/actualizar-education.component';
 import { RegistrarEducationComponent } from './components/education/registrar-education/registrar-education.component';
+import { ActualizarAboutComponent } from './components/about/actualizar-about/actualizar-about.component';
+import { ListarAboutComponent } from './components/about/listar-about/listar-about.component';
+import { RegistrarAboutComponent } from './components/about/registrar-about/registrar-about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     WorkComponent,
-    AboutComponent,
     ContactComponent,
     InfobasicaComponent,
     SkillsComponent,
@@ -51,6 +52,9 @@ import { RegistrarEducationComponent } from './components/education/registrar-ed
     ListarEducationComponent,
     ActualizarEducationComponent,
     RegistrarEducationComponent,
+    ActualizarAboutComponent,
+    ListarAboutComponent,
+    RegistrarAboutComponent,
   ],
   imports: [
     BrowserModule,
