@@ -1,1 +1,25 @@
-<p>listar-languages works!</p>
+
+
+<p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal">
+
+</i>LANGUAGES   </b><button class="b"><i class="material-icons">library_add</i></button></p>
+<br>
+
+<tr *ngFor="let langu of lang">
+
+<h6>{{langu.titulo}} </h6>
+<td>
+    <button (click)= "eliminarLanguages(langu.id)" class="btn">
+      <i class="fa fa-trash"></i></button>
+
+      <button (click)="actualizarLanguages(langu.id)" class="bt">
+        <i class="fa fa-edit"></i></button>
+
+        <br>
+        <br>
+
+<div class="w3-light-grey w3-round-xxlarge" style="margin-left: auto">
+  <div class="w3-round-xxlarge w3-teal" style="height:24px;margin-right: 40px;width: 209px;text-align: right"></div>
+</div>
+</td>
+</tr>

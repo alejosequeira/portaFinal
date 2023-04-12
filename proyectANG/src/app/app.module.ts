@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { LanguagesComponent } from './components/encabezado/languages/languages.component';
 import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
@@ -46,7 +45,6 @@ import { ListarLanguagesComponent } from './components/encabezado/languages/list
     EncabezadoComponent,
     WorkComponent,
     ContactComponent,
-    LanguagesComponent,
     ProyectsComponent,
     IniciarSesionComponent,
     PortfolioComponent,
