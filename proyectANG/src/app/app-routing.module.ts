@@ -12,6 +12,9 @@ import { ActualizarEducationComponent } from './components/education/actualizar-
 import { RegistrarAboutComponent } from './components/about/registrar-about/registrar-about.component';
 import { ActualizarAboutComponent } from './components/about/actualizar-about/actualizar-about.component';
 import { ListarAboutComponent } from './components/about/listar-about/listar-about.component';
+import { RegistrarInfoComponent } from './components/encabezado/infobasica/registrar-info/registrar-info.component';
+import { ListarInfoComponent } from './components/encabezado/infobasica/listar-info/listar-info.component';
+import { ActualizarInfoComponent } from './components/encabezado/infobasica/actualizar-info/actualizar-info.component';
 
 const routes: Routes = [
   //aca seria {path}:'portfolio-button',component:PortfolioButtonComponent};
@@ -31,6 +34,10 @@ const routes: Routes = [
   {path : 'registrar-about', component : RegistrarAboutComponent},
   {path : 'listar-about', component : ListarAboutComponent},
   {path : 'actualizar-about/:id', component : ActualizarAboutComponent},
+
+  {path : 'registrar-info', component : RegistrarInfoComponent},
+  {path : 'listar-info', component : ListarInfoComponent},
+  {path : 'actualizar-info/:id', component: ActualizarInfoComponent},
 ];
 
 @NgModule({

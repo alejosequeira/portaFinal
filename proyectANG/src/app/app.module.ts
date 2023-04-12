@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { InfobasicaComponent } from './components/encabezado/infobasica/infobasica.component';
 import { SkillsComponent } from './components/encabezado/skills/skills.component';
 import { LanguagesComponent } from './components/encabezado/languages/languages.component';
 import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -32,6 +31,12 @@ import { RegistrarEducationComponent } from './components/education/registrar-ed
 import { ActualizarAboutComponent } from './components/about/actualizar-about/actualizar-about.component';
 import { ListarAboutComponent } from './components/about/listar-about/listar-about.component';
 import { RegistrarAboutComponent } from './components/about/registrar-about/registrar-about.component';
+import { RegistrarInfoComponent } from './components/encabezado/infobasica/registrar-info/registrar-info.component';
+import { ListarInfoComponent } from './components/encabezado/infobasica/listar-info/listar-info.component';
+import { ActualizarInfoComponent } from './components/encabezado/infobasica/actualizar-info/actualizar-info.component';
+import { ActualizarSkillsComponent } from './components/encabezado/skills/actualizar-skills/actualizar-skills.component';
+import { ListarSkillsComponent } from './components/encabezado/skills/listar-skills/listar-skills.component';
+import { RegistrarSkillsComponent } from './components/encabezado/skills/registrar-skills/registrar-skills.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +44,6 @@ import { RegistrarAboutComponent } from './components/about/registrar-about/regi
     EncabezadoComponent,
     WorkComponent,
     ContactComponent,
-    InfobasicaComponent,
     SkillsComponent,
     LanguagesComponent,
     ProyectsComponent,
@@ -55,6 +59,12 @@ import { RegistrarAboutComponent } from './components/about/registrar-about/regi
     ActualizarAboutComponent,
     ListarAboutComponent,
     RegistrarAboutComponent,
+    RegistrarInfoComponent,
+    ListarInfoComponent,
+    ActualizarInfoComponent,
+    ActualizarSkillsComponent,
+    ListarSkillsComponent,
+    RegistrarSkillsComponent,
   ],
   imports: [
     BrowserModule,
