@@ -1,0 +1,115 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de work</h3>
+    <form (ngSubmit)= "onSubmit()" #workForm = "ngForm">
+      <div class="form-group">
+        <label>Titulo : </label>
+        <input type = "text"
+        class="form-control"
+        id = "titulot"
+        [(ngModel)] = "work.titulot"
+        name = "titulot"
+        required 
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite su titulo "
+        #titulot = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "titulot.invalid && (titulot.dirty || titulot.touched)">
+          <div *ngIf = "titulot.errors.required">
+            Digite su titulo por favor
+          </div>
+          <div *ngIf = "titulot.errors.minlength">
+            El titulo tiene que contener como minimo 4 caracteres
+          </div>
+          <div *ngIf = "titulot.errors.maxlength">
+            El titulo tiene que tener como maximo 10 caracteres
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label>inicio : </label>
+        <input type = "text"
+        class="form-control"
+        id = "iniciot"
+        [(ngModel)] = "work.iniciot"
+        name = "iniciot"
+        required
+        minlength="1"
+        maxlength="20"
+        placeholder="Digite su inicio "
+        #iniciot = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "iniciot.invalid && (iniciot.dirty || iniciot.touched)">
+          <div *ngIf = "iniciot.errors.required">
+            Digite su inicio por favor
+          </div>
+          <div *ngIf = "iniciot.errors.minlength">
+            El inicio tiene que contener como minimo 1 caracter
+          </div>
+          <div *ngIf = "iniciot.errors.maxlength">
+            El inicio tiene que tener como maximo 20 caracteres
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="form-group">
+        <label>fin : </label>
+        <input type = "text"
+        class="form-control"
+        id = "fint"
+        [(ngModel)] = "work.fint"
+        name = "fint"
+        required
+        minlength="1"
+        maxlength="20"
+        placeholder="Digite su fin "
+        #fint = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "fint.invalid && (fint.dirty || fint.touched)">
+          <div *ngIf = "fint.errors.required">
+            Digite su fin por favor
+          </div>
+          <div *ngIf = "fint.errors.minlength">
+            El fin tiene que contener como minimo 1 caracter
+          </div>
+          <div *ngIf = "fint.errors.maxlength">
+            El fin tiene que tener como maximo 20 caracteres
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label>descripcion : </label>
+        <input type = "text"
+        class="form-control"
+        id = "descriptiont"
+        [(ngModel)] = "work.descriptiont"
+        name = "descriptiont"
+        required
+        minlength="1"
+        maxlength="20"
+        placeholder="Digite su descripcion "
+        #descriptiont = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "descriptiont.invalid && (descriptiont.dirty || descriptiont.touched)">
+          <div *ngIf = "descriptiont.errors.required">
+            Digite su descripcion por favor
+          </div>
+          <div *ngIf = "descriptiont.errors.minlength">
+            El descripcion tiene que contener como minimo 10 caracteres
+          </div>
+          <div *ngIf = "descriptiont.errors.maxlength">
+            El descripcion tiene que tener como maximo 140 caracteres
+          </div>
+        </div>
+      </div>
+      
+
+      <button class="btn btn-success" [disabled]= "!workForm.form.valid">Guardar</button>
+    </form>
+  </div>
+  

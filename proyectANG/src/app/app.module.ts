@@ -6,7 +6,6 @@ import { NgModel } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
-import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProyectsComponent } from './components/proyects/proyects.component';
@@ -38,12 +37,14 @@ import { RegistrarSkillsComponent } from './components/encabezado/skills/registr
 import { RegistrarLanguagesComponent } from './components/encabezado/languages/registrar-languages/registrar-languages.component';
 import { ActualizarLanguagesComponent } from './components/encabezado/languages/actualizar-languages/actualizar-languages.component';
 import { ListarLanguagesComponent } from './components/encabezado/languages/listar-languages/listar-languages.component';
+import { ListarWorkComponent } from './components/work/listar-work/listar-work.component';
+import { RegistrarWorkComponent } from './components/work/registrar-work/registrar-work.component';
+import { ActualizarWorkComponent } from './components/work/actualizar-work/actualizar-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
-    WorkComponent,
     ContactComponent,
     ProyectsComponent,
     IniciarSesionComponent,
@@ -67,6 +68,9 @@ import { ListarLanguagesComponent } from './components/encabezado/languages/list
     RegistrarLanguagesComponent,
     ActualizarLanguagesComponent,
     ListarLanguagesComponent,
+    ListarWorkComponent,
+    RegistrarWorkComponent,
+    ActualizarWorkComponent,
   ],
   imports: [
     BrowserModule,

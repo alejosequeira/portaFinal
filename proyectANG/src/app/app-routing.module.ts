@@ -21,6 +21,9 @@ import { ActualizarSkillsComponent } from './components/encabezado/skills/actual
 import { RegistrarLanguagesComponent } from './components/encabezado/languages/registrar-languages/registrar-languages.component';
 import { ListarLanguagesComponent } from './components/encabezado/languages/listar-languages/listar-languages.component';
 import { ActualizarLanguagesComponent } from './components/encabezado/languages/actualizar-languages/actualizar-languages.component';
+import { RegistrarWorkComponent } from './components/work/registrar-work/registrar-work.component';
+import { ListarWorkComponent } from './components/work/listar-work/listar-work.component';
+import { ActualizarWorkComponent } from './components/work/actualizar-work/actualizar-work.component';
 
 const routes: Routes = [
   //aca seria {path}:'portfolio-button',component:PortfolioButtonComponent};
@@ -51,7 +54,11 @@ const routes: Routes = [
 
   {path : 'registrar-languages', component : RegistrarLanguagesComponent},
   {path : 'listar-languages', component : ListarLanguagesComponent},
-  {path : 'actualizar-languages/:id', component : ActualizarLanguagesComponent}
+  {path : 'actualizar-languages/:id', component : ActualizarLanguagesComponent},
+
+  {path : 'registrar-work', component : RegistrarWorkComponent},
+  {path : 'listar-work', component : ListarWorkComponent},
+  {path : 'actualizar-work/:id', component : ActualizarWorkComponent},
 ];
 
 @NgModule({
