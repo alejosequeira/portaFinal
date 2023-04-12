@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SkillsComponent } from './components/encabezado/skills/skills.component';
 import { LanguagesComponent } from './components/encabezado/languages/languages.component';
 import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProyectsComponent } from './components/proyects/proyects.component';
@@ -37,6 +36,9 @@ import { ActualizarInfoComponent } from './components/encabezado/infobasica/actu
 import { ActualizarSkillsComponent } from './components/encabezado/skills/actualizar-skills/actualizar-skills.component';
 import { ListarSkillsComponent } from './components/encabezado/skills/listar-skills/listar-skills.component';
 import { RegistrarSkillsComponent } from './components/encabezado/skills/registrar-skills/registrar-skills.component';
+import { RegistrarLanguagesComponent } from './components/encabezado/languages/registrar-languages/registrar-languages.component';
+import { ActualizarLanguagesComponent } from './components/encabezado/languages/actualizar-languages/actualizar-languages.component';
+import { ListarLanguagesComponent } from './components/encabezado/languages/listar-languages/listar-languages.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,6 @@ import { RegistrarSkillsComponent } from './components/encabezado/skills/registr
     EncabezadoComponent,
     WorkComponent,
     ContactComponent,
-    SkillsComponent,
     LanguagesComponent,
     ProyectsComponent,
     IniciarSesionComponent,
@@ -65,6 +66,9 @@ import { RegistrarSkillsComponent } from './components/encabezado/skills/registr
     ActualizarSkillsComponent,
     ListarSkillsComponent,
     RegistrarSkillsComponent,
+    RegistrarLanguagesComponent,
+    ActualizarLanguagesComponent,
+    ListarLanguagesComponent,
   ],
   imports: [
     BrowserModule,

@@ -25,7 +25,7 @@
         color: rgb(0, 0, 0); /* White text */
         padding: 1.5px 2px; /* Some padding */
         font-size: 0px; /* Set a font size */
-        cursor: pointer; /* Mouse pointer on hover */
+        cursor: auto; /* Mouse pointer on hover */
       }
     
       /* Darker background on mouse-over */

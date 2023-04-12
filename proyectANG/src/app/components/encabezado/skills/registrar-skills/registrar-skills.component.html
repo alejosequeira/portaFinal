@@ -1,1 +1,61 @@
-<p>registrar-skills works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Edición de skills</h3>
+    <form (ngSubmit)= "onSubmit()" #skillsForm = "ngForm">
+
+      <div class="form-group">
+        <label>titulo : </label>
+        <input type = "text"
+        class="form-control"
+        id = "titulo"
+        [(ngModel)] = "skills.titulo"
+        name = "titulo"
+        required
+        minlength="2"
+        maxlength="30"
+        placeholder="Digite su titulo "
+        #titulo = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "titulo.invalid && (titulo.dirty || titulo.touched)">
+          <div *ngIf = "titulo.errors.required">
+            Digite su titulo por favor
+          </div>
+          <div *ngIf = "titulo.errors.minlength">
+            El titulo tiene que contener como minimo 2 caracteres
+          </div>
+          <div *ngIf = "titulo.errors.maxlength">
+            El titulo tiene que tener como maximo 30 caracteres
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>porcentaje : </label>
+        <input type = "text"
+        class="form-control"
+        id = "porcentaje"
+        [(ngModel)] = "skills.porcentaje"
+        name = "porcentaje"
+        required
+        minlength="1"
+        maxlength="3"
+        placeholder="Digite su porcentaje "
+        #porcentaje = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "porcentaje.invalid && (porcentaje.dirty || porcentaje.touched)">
+          <div *ngIf = "porcentaje.errors.required">
+            Digite su porcentaje por favor
+          </div>
+          <div *ngIf = "porcentaje.errors.minlength">
+            El porcentaje tiene que contener como minimo 1 caracteres
+          </div>
+          <div *ngIf = "porcentaje.errors.maxlength">
+            El porcentaje tiene que tener como maximo 3 caracteres
+          </div>
+        </div>
+      </div>
+
+      
+  
+      <button class="btn btn-success" [disabled]= "!skillsForm.form.valid">Guardar</button>
+    </form>
+  </div>
