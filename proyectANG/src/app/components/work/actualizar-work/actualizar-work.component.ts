@@ -22,7 +22,7 @@ export class ActualizarWorkComponent implements OnInit {
   }
 
   irAlaListaDeWork(){
-    this.router.navigate(['/listar-work']);
+    this.router.navigate(['/portfolio']);
   }
 
   onSubmit(){

@@ -24,10 +24,15 @@ import { ActualizarLanguagesComponent } from './components/encabezado/languages/
 import { RegistrarWorkComponent } from './components/work/registrar-work/registrar-work.component';
 import { ListarWorkComponent } from './components/work/listar-work/listar-work.component';
 import { ActualizarWorkComponent } from './components/work/actualizar-work/actualizar-work.component';
+import { RegistrarProyectsComponent } from './components/proyects/registrar-proyects/registrar-proyects.component';
+import { ListarProyectsComponent } from './components/proyects/listar-proyects/listar-proyects.component';
+import { ActualizarProyectsComponent } from './components/proyects/actualizar-proyects/actualizar-proyects.component';
+import { PhotoGalleryComponent } from './components/encabezado/photo-gallery/photo-gallery.component';
 
 const routes: Routes = [
   //aca seria {path}:'portfolio-button',component:PortfolioButtonComponent};
   {path:'portfolio',component:PortfolioComponent},
+  {path:'photo-gallery', component: PhotoGalleryComponent},
   {path:'iniciar-sesion',component:IniciarSesionComponent},
   {path:'', redirectTo:'portfolio', pathMatch:'full'},
 
@@ -59,6 +64,10 @@ const routes: Routes = [
   {path : 'registrar-work', component : RegistrarWorkComponent},
   {path : 'listar-work', component : ListarWorkComponent},
   {path : 'actualizar-work/:id', component : ActualizarWorkComponent},
+
+  {path : 'registrar-proyects', component : RegistrarProyectsComponent},
+  {path : 'listar-proyects', component : ListarProyectsComponent},
+  {path : 'actualizar-proyects/:id', component : ActualizarProyectsComponent},
 ];
 
 @NgModule({

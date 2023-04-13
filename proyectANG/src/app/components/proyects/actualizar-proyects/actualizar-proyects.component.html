@@ -1,11 +1,11 @@
 <div class="col-md-6 offset-md-3">
 
-    <h3 class="text-center">Edición de educación</h3>    
-    <form (ngSubmit)="onSubmit()" #workForm="ngForm">
+    <h3 class="text-center">Edición de Proyects</h3>    
+    <form (ngSubmit)="onSubmit()" #proyectsForm="ngForm">
 
         <div class="form-group">
             <label>titulo : </label>
-            <input type="text" class="form-control" id="titulot" [(ngModel)]="work.titulot" name="titulot" required
+            <input type="text" class="form-control" id="titulot" [(ngModel)]="proyects.titulot" name="titulot" required
                 minlength="4" maxlength="20" placeholder="Digite un titulo " #titulot="ngModel">
             <div class="alert alert-danger" *ngIf="titulot.invalid && (titulot.dirty || titulot.touched)">
                 <div *ngIf="titulot.errors.required">
@@ -22,7 +22,7 @@
 
         <div class="form-group">
             <label>Fecha de inicio : </label>
-            <input type="text" class="form-control" id="iniciot" [(ngModel)]="work.iniciot" name="iniciot"
+            <input type="text" class="form-control" id="iniciot" [(ngModel)]="proyects.iniciot" name="iniciot"
                 required minlength="1" maxlength="20" placeholder="Digite el inicio " #iniciot="ngModel">
             <div class="alert alert-danger" *ngIf="iniciot.invalid && (iniciot.dirty || iniciot.touched)">
                 <div *ngIf="iniciot.errors.required">
@@ -41,7 +41,7 @@
         
         <div class="form-group">
             <label>Fecha de finalización : </label>
-            <input type="text" class="form-control" id="fint" [(ngModel)]="work.fint" name="fint"
+            <input type="text" class="form-control" id="fint" [(ngModel)]="proyects.fint" name="fint"
                 required minlength="1" maxlength="20" placeholder="Digite el fin " #fint="ngModel">
             <div class="alert alert-danger" *ngIf="fint.invalid && (fint.dirty || fint.touched)">
                 <div *ngIf="fint.errors.required">
@@ -60,7 +60,7 @@
         
         <div class="form-group">
             <label>Incluya una breve descripción </label>
-            <input type="text" class="form-control" id="descriptiont" [(ngModel)]="work.descriptiont" name="descriptiont"
+            <input type="text" class="form-control" id="descriptiont" [(ngModel)]="proyects.descriptiont" name="descriptiont"
                 required minlength="1" maxlength="140" placeholder="Digite la descriptiont " #descriptiont="ngModel">
             <div class="alert alert-danger" *ngIf="descriptiont.invalid && (descriptiont.dirty || descriptiont.touched)">
                 <div *ngIf="descriptiont.errors.required">
@@ -77,6 +77,6 @@
 
         
 
-        <button class="btn btn-success" [disabled]="!workForm.form.valid">Guardar</button>
+        <button class="btn btn-success" [disabled]="!proyectsForm.form.valid">Guardar</button>
     </form>
 </div>

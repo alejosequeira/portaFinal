@@ -24,7 +24,7 @@ export class RegistrarSkillsComponent implements OnInit{
   }
 
   irALaListaDeSkills(){
-    this.router.navigate(['/listar-skills']);
+    this.router.navigate(['/portfolio']);
     
   }
 

@@ -24,7 +24,7 @@ export class RegistrarWorkComponent implements OnInit{
   }
 
   irALaListaDeWork(){
-    this.router.navigate(['/listar-work']);
+    this.router.navigate(['/portfolio']);
     
   }
 

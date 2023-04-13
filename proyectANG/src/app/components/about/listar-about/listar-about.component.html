@@ -10,9 +10,9 @@
       </h5>
       <tr *ngFor="let aboutme of abo">
       <p>{{aboutme.descripcion}}
-
-        <button (click)= "actualizarAboutMe(aboutme.id)" class="bt"><i class="fa fa-edit"></i></button>
         <button (click)= "eliminarAboutMe(aboutme.id)" class="btn"><i class="fa fa-trash"></i></button>
+        <button (click)= "actualizarAboutMe(aboutme.id)" class="bt"><i class="fa fa-edit"></i></button>
+        
       </p>
 
       

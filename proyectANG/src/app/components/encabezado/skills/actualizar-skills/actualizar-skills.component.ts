@@ -22,7 +22,7 @@ export class ActualizarSkillsComponent implements OnInit {
   }
 
   irAlaListaDeSkills(){
-    this.router.navigate(['listar-skills']);
+    this.router.navigate(['/portfolio']);
   }
 
   onSubmit(){

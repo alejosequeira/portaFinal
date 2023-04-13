@@ -24,7 +24,7 @@ export class RegistrarInfoComponent implements OnInit{
   }
 
   irALaListaDeInfoBasica(){
-    this.router.navigate(['/listar-info']);
+    this.router.navigate(['/portfolio']);
     
   }
 

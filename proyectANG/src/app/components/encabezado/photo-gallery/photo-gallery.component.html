@@ -1,0 +1,15 @@
+
+<input type="file" (change)="uploadPhoto($event)">
+<ol>
+  <li *ngFor="let photo of photos" (click)="selectPhoto(photo)">
+    <img src="{{ photo.url }}">
+  </li>
+</ol>
+<div *ngIf="selectedPhoto">
+  <img src="{{ selectedPhoto.url }}" style="max-width: 300px;">
+  <form (submit)="updatePhoto()">
+    <input type="text" [(ngModel)]="selectedPhoto.title">
+    <button type="submit">Save Changes</button>
+  </form>
+  <button (click)="deletePhoto()">Delete Photo</button>
+</div>

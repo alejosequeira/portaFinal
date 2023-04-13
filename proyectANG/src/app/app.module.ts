@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ProyectsComponent } from './components/proyects/proyects.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -40,13 +39,16 @@ import { ListarLanguagesComponent } from './components/encabezado/languages/list
 import { ListarWorkComponent } from './components/work/listar-work/listar-work.component';
 import { RegistrarWorkComponent } from './components/work/registrar-work/registrar-work.component';
 import { ActualizarWorkComponent } from './components/work/actualizar-work/actualizar-work.component';
+import { ActualizarProyectsComponent } from './components/proyects/actualizar-proyects/actualizar-proyects.component';
+import { RegistrarProyectsComponent } from './components/proyects/registrar-proyects/registrar-proyects.component';
+import { ListarProyectsComponent } from './components/proyects/listar-proyects/listar-proyects.component';
+import { PhotoGalleryComponent } from './components/encabezado/photo-gallery/photo-gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     ContactComponent,
-    ProyectsComponent,
     IniciarSesionComponent,
     PortfolioComponent,
     RegistrarEmpleadosComponent,
@@ -71,6 +73,10 @@ import { ActualizarWorkComponent } from './components/work/actualizar-work/actua
     ListarWorkComponent,
     RegistrarWorkComponent,
     ActualizarWorkComponent,
+    ActualizarProyectsComponent,
+    RegistrarProyectsComponent,
+    ListarProyectsComponent,
+    PhotoGalleryComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ export class RegistrarLanguagesComponent implements OnInit {
   }
 
   irALaListaDeLanguages(){
-    this.router.navigate(['/listar-languages']);
+    this.router.navigate(['/portfolio']);
     
   }
 

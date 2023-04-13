@@ -22,7 +22,7 @@ export class ActualizarInfoComponent implements OnInit {
   }
 
   irAlaListaDeInfoBasica(){
-    this.router.navigate(['/listar-info']);
+    this.router.navigate(['/portfolio']);
   }
 
   onSubmit(){

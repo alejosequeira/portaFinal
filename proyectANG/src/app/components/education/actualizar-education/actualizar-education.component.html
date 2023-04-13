@@ -61,7 +61,7 @@
         <div class="form-group">
             <label>Incluya una breve descripción </label>
             <input type="text" class="form-control" id="descriptiont" [(ngModel)]="education.descriptiont" name="descriptiont"
-                required minlength="10" maxlength="140" placeholder="Digite la descriptiont " #descriptiont="ngModel">
+                required minlength="1" maxlength="140" placeholder="Digite la descriptiont " #descriptiont="ngModel">
             <div class="alert alert-danger" *ngIf="descriptiont.invalid && (descriptiont.dirty || descriptiont.touched)">
                 <div *ngIf="descriptiont.errors.required">
                     Digite la descripcion por favor

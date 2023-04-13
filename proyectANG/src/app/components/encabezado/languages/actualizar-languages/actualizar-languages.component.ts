@@ -22,7 +22,7 @@ export class ActualizarLanguagesComponent implements OnInit {
   }
 
   irAlaListaDeLanguages(){
-    this.router.navigate(['listar-languages']);
+    this.router.navigate(['/portfolio']);
   }
 
   onSubmit(){

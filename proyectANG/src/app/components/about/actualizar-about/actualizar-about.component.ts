@@ -22,7 +22,7 @@ export class ActualizarAboutComponent implements OnInit {
   }
 
   irAlaListaDeAboutMe(){
-    this.router.navigate(['/listar-about']);
+    this.router.navigate(['/portfolio']);
   }
 
   onSubmit(){

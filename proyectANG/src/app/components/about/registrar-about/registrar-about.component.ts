@@ -24,7 +24,7 @@ export class RegistrarAboutComponent implements OnInit{
     }
   
     irALaListaDeAboutMe(){
-      this.router.navigate(['/listar-about']);
+      this.router.navigate(['/portfolio']);
       
     }
   
