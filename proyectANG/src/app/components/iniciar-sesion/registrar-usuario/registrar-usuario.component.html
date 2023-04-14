@@ -1,0 +1,56 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de userlogin</h3>
+    <form (ngSubmit)= "onSubmit()" #userloginForm = "ngForm">
+        <div class="form-group">
+            <label>mailUser : </label>
+            <input type = "mailUser"
+            class="form-control"
+            id = "mailUser"
+            [(ngModel)] = "userlogin.mailUser"
+            name = "mailUser"
+            pattern ="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            required
+            placeholder="Digite su mailUser "
+            #mailUser = "ngModel"
+            >
+            <div class="alert alert-danger" *ngIf= "mailUser.invalid && (mailUser.dirty || mailUser.touched)">
+              <div *ngIf = "mailUser.errors.required">
+                Digite su mailUser por favor
+              </div>
+              <div *ngIf = "mailUser.errors.pattern">
+                Por favor digite el mailUser con el siguiente formato : user100@gmail.com
+              </div>
+            </div>
+          </div>
+
+      <div class="form-group">
+        <label>passwordUser : </label>
+        <input type = "text"
+        class="form-control"
+        id = "passwordUser"
+        [(ngModel)] = "userlogin.passwordUser"
+        name = "passwordUser"
+        required
+        minlength="1"
+        maxlength="20"
+        placeholder="Digite su passwordUser "
+        #passwordUser = "ngModel"
+        >
+        <div class="alert alert-danger" *ngIf= "passwordUser.invalid && (passwordUser.dirty || passwordUser.touched)">
+          <div *ngIf = "passwordUser.errors.required">
+            Digite su passwordUser por favor
+          </div>
+          <div *ngIf = "passwordUser.errors.minlength">
+            El passwordUser tiene que contener como minimo 1 caracter
+          </div>
+          <div *ngIf = "passwordUser.errors.maxlength">
+            El passwordUser tiene que tener como maximo 20 caracteres
+          </div>
+        </div>
+      </div>
+<br>
+      
+      <button class="btn btn-success" [disabled]= "!userloginForm.form.valid">Guardar</button>
+    </form>
+  </div>
+  

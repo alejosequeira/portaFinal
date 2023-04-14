@@ -5,10 +5,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PortfolioService {
-  url:string="localhost:8080/"
+  url:string="http://localhost:8080/"
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.http.get<any>(this.url+"ver/personas");
+    return this.http.get<any>(this.url+"api/v2/info");
   }
 }

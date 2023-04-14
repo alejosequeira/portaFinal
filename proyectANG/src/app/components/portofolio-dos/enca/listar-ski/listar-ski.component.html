@@ -1,6 +1,6 @@
 <div class="skills">
   
-  <h2>Skills<button (click)="registrarSkills()" class="btn-add">
+  <h2>Skills<button class="btn-add">
     <i class="material-icons">library_add</i> Add Skill
   </button></h2>
   
@@ -13,11 +13,11 @@
           <h4>{{skill.titulo}}</h4>
           
           <div>
-            <button (click)="eliminarSkills(skill.id)" class="btn">
+            <button class="btn">
               <i class="fa fa-trash"></i> 
             </button>
 
-            <button (click)="actualizarSkills(skill.id)" class="bt">
+            <button class="bt">
               <i class="fa fa-edit"></i>
             </button>
           </div>

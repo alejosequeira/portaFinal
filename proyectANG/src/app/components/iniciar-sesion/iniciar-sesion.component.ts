@@ -15,19 +15,19 @@ export class IniciarSesionComponent implements OnInit {
     private autenticacionService:AutenticacionService, private ruta:Router){
     this.form=this.formBuilder.group(
       {
-        mail:['', [Validators.required, Validators.email]],
-        password:['', [Validators.required, Validators.minLength(8)]]
+        mailUser:['', [Validators.required, Validators.email]],
+        passwordUser:['', [Validators.required, Validators.minLength(8)]]
         }
     )
   }
   ngOnInit(): void{
   }
 
-  get Email(){
-    return this.form.get('mail');
+  get MailUser(){
+    return this.form.get('mailUser');
   }
-  get Password(){
-    return this.form.get('password');
+  get PasswordUser(){
+    return this.form.get('passwordUser');
   }
   onEnviar(event:Event)
   {

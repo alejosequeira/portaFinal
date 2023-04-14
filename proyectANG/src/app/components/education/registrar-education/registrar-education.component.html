@@ -10,7 +10,7 @@
         name = "titulot"
         required 
         minlength="4"
-        maxlength="10"
+        maxlength="50"
         placeholder="Digite su titulo "
         #titulot = "ngModel"
         >
@@ -22,7 +22,7 @@
             El titulo tiene que contener como minimo 4 caracteres
           </div>
           <div *ngIf = "titulot.errors.maxlength">
-            El titulo tiene que tener como maximo 10 caracteres
+            El titulo tiene que tener como maximo 50 caracteres
           </div>
         </div>
       </div>
@@ -90,8 +90,8 @@
         [(ngModel)] = "education.descriptiont"
         name = "descriptiont"
         required
-        minlength="1"
-        maxlength="20"
+        minlength="10"
+        maxlength="140"
         placeholder="Digite su descripcion "
         #descriptiont = "ngModel"
         >

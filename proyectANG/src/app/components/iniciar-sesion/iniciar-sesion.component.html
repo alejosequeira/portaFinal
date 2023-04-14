@@ -2,35 +2,35 @@
 
 <form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="mail" formControlName='mail'
-      [ngClass]="{'is-invalid':Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+      <label for="exampleInputMailUser1" class="form-label">MailUser address</label>
+      <input type="mailUser" formControlName='mailUser'
+      [ngClass]="{'is-invalid':MailUser?.errors && MailUser?.touched, 'is-valid': !MailUser?.errors && MailUser?.touched}"
       class="form-control" 
-      id="exampleInputEmail1" aria-describedby="emailHelp">
+      id="exampleInputMailUser1" aria-describedby="mailUserHelp">
       
-      <div *ngIf="Email?.errors && Email?.touched">
+      <div *ngIf="MailUser?.errors && MailUser?.touched">
         
-        <p *ngIf="Email?.hasError('required')" class="text-danger">
-          el email es required.
+        <p *ngIf="MailUser?.hasError('required')" class="text-danger">
+          el mailUser es required.
         </p>
-        <p *ngIf="Email?.hasError('mail')" class="text-danger">
-          el formato del email debe ser valido.
+        <p *ngIf="MailUser?.hasError('mailUser')" class="text-danger">
+          el formato del mailUser debe ser valido.
         </p>
       </div>
       
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" formControlName="password" 
-      [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+      <label for="exampleInputPasswordUser1" class="form-label">PasswordUser</label>
+      <input type="passwordUser" formControlName="passwordUser" 
+      [ngClass]="{'is-invalid': PasswordUser?.errors && PasswordUser?.touched, 'is-valid': !PasswordUser?.errors && PasswordUser?.touched}"
       class="form-control" 
-      id="exampleInputPassword1">
+      id="exampleInputPasswordUser1">
 
-      <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text-danger">
+      <div *ngIf="PasswordUser?.errors && PasswordUser?.touched">
+        <p *ngIf="PasswordUser?.hasError('required')" class="text-danger">
           la contra es requerida
         </p>
-        <p *ngIf="Password?.errors?.['minlenght']" class="text-danger">
+        <p *ngIf="PasswordUser?.errors?.['minlenght']" class="text-danger">
           la contra debe ser de mas de 8
         </p>
       </div>

@@ -43,6 +43,17 @@ import { ActualizarProyectsComponent } from './components/proyects/actualizar-pr
 import { RegistrarProyectsComponent } from './components/proyects/registrar-proyects/registrar-proyects.component';
 import { ListarProyectsComponent } from './components/proyects/listar-proyects/listar-proyects.component';
 import { PhotoGalleryComponent } from './components/encabezado/photo-gallery/photo-gallery.component';
+import { RegistrarUsuarioComponent } from './components/iniciar-sesion/registrar-usuario/registrar-usuario.component';
+import { CerrarSesionComponent } from './components/cerrar-sesion/cerrar-sesion.component';
+import { PortofolioDosComponent } from './components/portofolio-dos/portofolio-dos.component';
+import { ListarEduComponent } from './components/portofolio-dos/listar-edu/listar-edu.component';
+import { ListarWorComponent } from './components/portofolio-dos/listar-wor/listar-wor.component';
+import { ListarProComponent } from './components/portofolio-dos/listar-pro/listar-pro.component';
+import { ListarAboComponent } from './components/portofolio-dos/listar-abo/listar-abo.component';
+import { EncaComponent } from './components/portofolio-dos/enca/enca.component';
+import { ListarInfComponent } from './components/portofolio-dos/enca/listar-inf/listar-inf.component';
+import { ListarLanComponent } from './components/portofolio-dos/enca/listar-lan/listar-lan.component';
+import { ListarSkiComponent } from './components/portofolio-dos/enca/listar-ski/listar-ski.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +88,17 @@ import { PhotoGalleryComponent } from './components/encabezado/photo-gallery/pho
     RegistrarProyectsComponent,
     ListarProyectsComponent,
     PhotoGalleryComponent,
+    RegistrarUsuarioComponent,
+    CerrarSesionComponent,
+    PortofolioDosComponent,
+    ListarEduComponent,
+    ListarWorComponent,
+    ListarProComponent,
+    ListarAboComponent,
+    EncaComponent,
+    ListarInfComponent,
+    ListarLanComponent,
+    ListarSkiComponent,
   ],
   imports: [
     BrowserModule,

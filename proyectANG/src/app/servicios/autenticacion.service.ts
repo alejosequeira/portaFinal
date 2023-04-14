@@ -25,6 +25,12 @@ export class AutenticacionService {
     return data;
   }))
 }
+
+logout(): void {
+  sessionStorage.removeItem('currentUser');
+  // Or remove any other stored user data or access tokens.
+}
+
 get UsuarioAutenticado()
 {
   return this.currentUserSubject.value;

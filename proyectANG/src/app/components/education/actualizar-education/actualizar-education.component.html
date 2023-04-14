@@ -6,7 +6,7 @@
         <div class="form-group">
             <label>titulo : </label>
             <input type="text" class="form-control" id="titulot" [(ngModel)]="education.titulot" name="titulot" required
-                minlength="4" maxlength="20" placeholder="Digite un titulo " #titulot="ngModel">
+                minlength="4" maxlength="50" placeholder="Digite un titulo " #titulot="ngModel">
             <div class="alert alert-danger" *ngIf="titulot.invalid && (titulot.dirty || titulot.touched)">
                 <div *ngIf="titulot.errors.required">
                     Digite un titulo por favor
@@ -15,7 +15,7 @@
                     El titulo tiene que contener como minimo 4 caracteres
                 </div>
                 <div *ngIf="titulot.errors.maxlength">
-                    El titulo tiene que tener como maximo 20 caracteres
+                    El titulo tiene que tener como maximo 50 caracteres
                 </div>
             </div>
         </div>
@@ -70,11 +70,11 @@
                     La descripcion tiene que contener como minimo algun caracter
                 </div>
                 <div *ngIf="descriptiont.errors.maxlength">
-                    La descripcion tiene que tener como maximo 20 caracteres
+                    La descripcion tiene que tener como maximo 140 caracteres
                 </div>
             </div>
         </div>
-
+        
         
 
         <button class="btn btn-success" [disabled]="!educationForm.form.valid">Guardar</button>
