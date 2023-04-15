@@ -1,3 +1,14 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+  
+  <ul class="navbar-nav">
+
+<div class="correte5">
+  <div class="w3-animate-left">
+    <div class="w3-container ">
+      <a routerLink="/portfolio" 
+      routerLinkActive="active" class="nav-link" ><i class="fa fa-home" style="font-size:200%;"></i></a></div></div></div>
+  </ul></nav>
 <div class="col-md-6 offset-md-3">
     <h3 class="text-center">Edición de skills</h3>
     <form (ngSubmit)= "onSubmit()" #skillsForm = "ngForm">
@@ -30,7 +41,7 @@
   
       <div class="form-group">
         <label>porcentaje : </label>
-        <input type = "text"
+        <input type = "number"
         class="form-control"
         id = "porcentaje"
         [(ngModel)] = "skills.porcentaje"
@@ -38,6 +49,8 @@
         required
         minlength="1"
         maxlength="3"
+        min="1" 
+        max="100"
         placeholder="Digite su porcentaje "
         #porcentaje = "ngModel"
         >
@@ -45,10 +58,10 @@
           <div *ngIf = "porcentaje.errors.required">
             Digite su porcentaje por favor
           </div>
-          <div *ngIf = "porcentaje.errors.minlength">
+          <div *ngIf = "porcentaje.errors.minlength && porcentaje.errors.min">
             El porcentaje tiene que contener como minimo 1 caracteres
           </div>
-          <div *ngIf = "porcentaje.errors.maxlength">
+          <div *ngIf = "porcentaje.errors.maxlength && porcentaje.errors.max">
             El porcentaje tiene que tener como maximo 3 caracteres
           </div>
         </div>

@@ -1,45 +1,116 @@
+.skills {
+  margin-top: 20px;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0px 5px;
+  float: right;
+  border: none;
+  border-radius: 4px;  
+  cursor: pointer;
+  font-size: 40%;
+}
+
+.btn-add i {
+  vertical-align: middle;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.skills-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  position: relative;
+}
+
+.skills-table td h4 {
+  margin-top: 0;
+}
+
+.progress-bar {
+  height: 24px;
+  margin-right: 40px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  line-height: 24px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  background-color: #4CAF50;
+  transition: width 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Style buttons */
 .btn {
+  float: right;
+    background-color: rgba(255, 255, 255, 0.993); /* Blue background */
+    border: none; /* Remove borders */
+    color: rgb(255, 0, 0); /* White text */
+    padding: 3px 7px; /* Some padding */
+    font-size: 19px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+
+  .bt {
     float: right;
-      background-color: rgba(255, 255, 255, 0.993); /* Blue background */
-      border: none; /* Remove borders */
-      color: rgb(255, 0, 0); /* White text */
-      padding: 0px 7px; /* Some padding */
-      font-size: 19px; /* Set a font size */
+    background-color: rgb(255, 255, 255); /* Blue background */
+    border: none; /* Remove borders */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 4px 4px; /* Some padding */
+    font-size: 19px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+    
+    .b {
+      background-color: rgb(255, 255, 255); /* Blue background */
+      border: black; /* Remove borders */
+      color: rgb(0, 0, 0); /* White text */
+      padding: 1.5px 2px; /* Some padding */
+      font-size: 0px; /* Set a font size */
       cursor: pointer; /* Mouse pointer on hover */
     }
   
-    .bt {
-      float: right;
-      background-color: rgb(255, 255, 255); /* Blue background */
-      border: none; /* Remove borders */
-      color: rgb(0, 0, 0); /* White text */
-      padding: 1px 7px; /* Some padding */
-      font-size: 19px; /* Set a font size */
-      cursor: pointer; /* Mouse pointer on hover */
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: rgb(128, 66, 66);
+      border-radius: 10px;
     }
-      
-      .b {
-        background-color: rgb(255, 255, 255); /* Blue background */
-        border: black; /* Remove borders */
-        color: rgb(0, 0, 0); /* White text */
-        padding: 1.5px 2px; /* Some padding */
-        font-size: 0px; /* Set a font size */
-        cursor: pointer; /* Mouse pointer on hover */
-      }
-    
-      /* Darker background on mouse-over */
-      .btn:hover {
-        background-color: rgb(225, 65, 65);
-      }
-    
-      /* Darker background on mouse-over */
-      .bt:hover {
-        background-color: RoyalBlue;
-      }
-    
-      /* Darker background on mouse-over */
-      .b:hover {
-        background-color: rgb(95, 95, 95);
-      }
-    
+  
+    /* Darker background on mouse-over */
+    .bt:hover {
+      background-color: rgb(143, 169, 250);
+      border-radius: 10px;
+    }
+  
+    /* Darker background on mouse-over */
+    .b:hover {
+      background-color: rgb(95, 95, 95);
+    }
+  
