@@ -9,7 +9,7 @@ import { InfoBasica } from '../infobasica';
 export class InfoBasicaService {
 
    //Esta URL obtiene el listado de todos los InfoBasicas en el backend
-   private URL = "http://localhost:8080/api/v2/info";
+   private URL = "https://portfolioback-jrnq.onrender.com/api/v2/info";
 
    constructor(private httpClient : HttpClient) { }
  

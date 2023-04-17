@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class LanguagesService {
 
  //Esta URL obtiene el listado de todos los languagess en el backend
- private URL = "http://localhost:8080/api/v2/languages";
+ private URL = "https://portfolioback-jrnq.onrender.com/api/v2/languages";
 
  constructor(private httpClient : HttpClient) { }
 

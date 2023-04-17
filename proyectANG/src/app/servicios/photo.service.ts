@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PhotoService {
-  private baseUrl = 'http://localhost:8080/api/v2/photo';
+  private baseUrl = 'https://portfolioback-jrnq.onrender.com/api/v2/photo';
 
   constructor(private http: HttpClient) {}
 

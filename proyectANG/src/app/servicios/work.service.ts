@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class WorkService {
 
   //Esta URL obtiene el listado de todos los empleados en el backend
-  private URL = "http://localhost:8080/api/v2/work";
+  private URL = "https://portfolioback-jrnq.onrender.com/api/v2/work";
 
   constructor(private httpClient : HttpClient) { }
 

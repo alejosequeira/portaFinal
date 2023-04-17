@@ -10,7 +10,7 @@ export class UserloginService {
  
 
   //Esta URL obtiene el listado de todos los empleados en el backend
-  private URL = "http://localhost:8080/addUser";
+  private URL = "https://portfolioback-jrnq.onrender.com/addUser";
 
   constructor(private httpClient : HttpClient) { }
 

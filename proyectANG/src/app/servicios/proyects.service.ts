@@ -9,7 +9,7 @@ import { Proyects } from '../proyects';
 export class ProyectsService{
 
   //Esta URL obtiene el listado de todos los empleados en el backend
-  private URL = "http://localhost:8080/api/v2/proyects";
+  private URL = "https://portfolioback-jrnq.onrender.com/api/v2/proyects";
 
   constructor(private httpClient : HttpClient) { }
 
